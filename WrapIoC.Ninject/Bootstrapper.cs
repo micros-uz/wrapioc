@@ -1,8 +1,8 @@
-﻿[assembly: WebActivatorEx.PreApplicationStartMethod(typeof(WrapIoC.Ninject.Bootstraper), "Init")]
+﻿[assembly: WebActivatorEx.PreApplicationStartMethod(typeof(WrapIoC.Ninject.Bootstrapper), "Init")]
 
 namespace WrapIoC.Ninject
 {
-    public static class Bootstraper
+    public static class Bootstrapper
     {
         public static void Init()
         {

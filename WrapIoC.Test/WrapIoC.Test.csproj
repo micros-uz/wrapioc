@@ -50,8 +50,20 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="ITestInterface.cs" />
+    <Compile Include="NinjectTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestIntfImpl.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WrapIoC.Ninject\WrapIoC.Ninject.csproj">
+      <Project>{e04ae510-56b3-484a-ba5c-c6a638153dc7}</Project>
+      <Name>WrapIoC.Ninject</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WrapIoC\WrapIoC.csproj">
+      <Project>{fc5879ba-35a7-42c7-9209-bb37ab6f1597}</Project>
+      <Name>WrapIoC</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

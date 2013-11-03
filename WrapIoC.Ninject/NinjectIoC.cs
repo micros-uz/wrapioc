@@ -1,4 +1,5 @@
-﻿using Ninject;
+﻿using System;
+using Ninject;
 using WrapIoC;
 
 namespace WrapIoC.Ninject
@@ -15,6 +16,11 @@ namespace WrapIoC.Ninject
         }
 
         #region IIoC
+
+        void IIoC.Register<TIntf>(Func<TIntf> func, IoCWorkMode workMode = IoCWorkMode.None)
+        {
+            _Kernel.Bind<TIntf>().ToMethod(x => func());
+        }
 
         void IIoC.Register<TIntf, TImpl>(IoCWorkMode mode)
         {
