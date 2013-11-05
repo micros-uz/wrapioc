@@ -41,9 +41,9 @@
     <Reference Include="WebActivatorEx">
       <HintPath>..\packages\WebActivatorEx.2.0.3\lib\net40\WebActivatorEx.dll</HintPath>
     </Reference>
-    <Reference Include="WrapIoC, Version=0.9.8.2, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="WrapIoC, Version=0.9.8.3, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\WrapIoC.0.9.8.2\lib\net45\WrapIoC.dll</HintPath>
+      <HintPath>..\packages\WrapIoC.0.9.8.3\lib\net45\WrapIoC.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

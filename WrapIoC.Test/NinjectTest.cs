@@ -16,5 +16,15 @@ namespace WrapIoC.Test
 
             Assert.IsNotNull(IoC.Current.Get<ITestInterface>());
         }
+
+        [TestMethod]
+        public void TryGetTest()
+        {
+            Bootstrapper.Init();
+
+            var intf = IoC.Current.TryGet<ITestInterface>();
+
+            Assert.AreEqual(intf, default(ITestInterface));
+        }
     }
 }

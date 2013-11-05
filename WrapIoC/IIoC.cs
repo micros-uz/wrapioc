@@ -9,6 +9,8 @@ namespace WrapIoC
         void Register<TIntf, TImpl>(string name, IoCWorkMode workMode = IoCWorkMode.None) where TImpl : TIntf;
         T Get<T>();
         T Get<T>(string name);
+        T TryGet<T>();
+        T TryGet<T>(string name);
         object Get(Type type);
         bool Release(object obj);
     }

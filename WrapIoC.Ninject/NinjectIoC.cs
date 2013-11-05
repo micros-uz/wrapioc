@@ -61,6 +61,16 @@ namespace WrapIoC.Ninject
             }
         }
 
+        T IIoC.TryGet<T>()
+        {
+            return _Kernel.TryGet<T>();
+        }
+
+        T IIoC.TryGet<T>(string name)
+        {
+            return _Kernel.TryGet<T>(name);
+        }
+
         object IIoC.Get(System.Type type)
         {
             try
