@@ -23,8 +23,10 @@ namespace WrapIoC.Test
             Bootstrapper.Init();
 
             var intf = IoC.Current.TryGet<ITestInterface>();
+            var intf2 = IoC.Current.TryGet(typeof(ITestInterface));
 
             Assert.AreEqual(intf, default(ITestInterface));
+            Assert.AreEqual(intf2, default(ITestInterface));
         }
     }
 }

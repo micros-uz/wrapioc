@@ -83,6 +83,11 @@ namespace WrapIoC.Ninject
             }
         }
 
+        object IIoC.TryGet(System.Type type)
+        {
+            return _Kernel.TryGet(type);
+        }
+
         bool IIoC.Release(object obj)
         {
             return true;

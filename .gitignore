@@ -27,3 +27,5 @@ obj/
 [Rr]elease*/
 
 /packages
+/NuGet Package/*.dll
+/NuGet Package/*.xml
